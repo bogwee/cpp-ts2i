@@ -1,3 +1,0 @@
-/home/lucah/work/polytech/mam4/cpp-ts2i/src/build/CMakeFiles/cpp-ts2i.dir
-/home/lucah/work/polytech/mam4/cpp-ts2i/src/build/CMakeFiles/edit_cache.dir
-/home/lucah/work/polytech/mam4/cpp-ts2i/src/build/CMakeFiles/rebuild_cache.dir
