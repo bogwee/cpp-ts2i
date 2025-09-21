@@ -39,3 +39,41 @@ Sur Ubuntu/Debian, ouvrez un terminal et exécutez :
 ```bash
 sudo apt update
 sudo apt install -y build-essential cmake libopencv-dev libeigen3-dev
+```
+
+---
+
+## 4. Compilation  
+
+Depuis le dossier racine :  
+```bash
+mkdir build && cd build
+cmake ..
+make -j
+```
+
+---
+
+## 5. Exécution  
+
+La commande : 
+```bash
+./codec ../../img/earth.png 4
+```
+### Explication des paramètres  
+- **`../../img/earth.png`** : chemin vers l'image à compresser.  
+- **`4`** : paramètre **n** qui contrôle le masquage des hautes fréquences lors de la compression.  
+
+### Comment fonctionne le paramètre `n`  
+La DCT (Transformée en Cosinus Discrète) décompose l'image en deux types d'informations :  
+- **Basses fréquences** : les informations principales (formes, couleurs dominantes) ;  
+- **Hautes fréquences** : les détails fins et le bruit visuel.  
+
+Le paramètre `n` fixe un seuil :  
+- Pour chaque bloc $8 \times 8$, si l'indice du coefficient vérifie $i + j > n$, ce coefficient est mis à **zéro**.  
+- Plus on met de coefficients à zéro, plus la compression est forte, mais plus on perd de détails.  
+
+### Impact sur la compression et la qualité  
+- **Petit `n`** → plus de coefficients supprimés → **forte compression** mais **image floutée**.  
+- **Grand `n`** → moins de coefficients supprimés → **faible compression** mais **image plus nette**.  
+

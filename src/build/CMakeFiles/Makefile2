@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/lucah/work/polytech/mam4/cpp-ts2i/src/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/codec.dir/all
+all: CMakeFiles/cpp-ts2i.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/codec.dir/clean
+clean: CMakeFiles/cpp-ts2i.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/codec.dir
+# Target rules for target CMakeFiles/cpp-ts2i.dir
 
 # All Build rule for target.
-CMakeFiles/codec.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/codec.dir/build.make CMakeFiles/codec.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/codec.dir/build.make CMakeFiles/codec.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lucah/work/polytech/mam4/cpp-ts2i/src/build/CMakeFiles --progress-num=1,2 "Built target codec"
-.PHONY : CMakeFiles/codec.dir/all
+CMakeFiles/cpp-ts2i.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp-ts2i.dir/build.make CMakeFiles/cpp-ts2i.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp-ts2i.dir/build.make CMakeFiles/cpp-ts2i.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lucah/work/polytech/mam4/cpp-ts2i/src/build/CMakeFiles --progress-num=1,2,3 "Built target cpp-ts2i"
+.PHONY : CMakeFiles/cpp-ts2i.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/codec.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lucah/work/polytech/mam4/cpp-ts2i/src/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/codec.dir/all
+CMakeFiles/cpp-ts2i.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lucah/work/polytech/mam4/cpp-ts2i/src/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cpp-ts2i.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lucah/work/polytech/mam4/cpp-ts2i/src/build/CMakeFiles 0
-.PHONY : CMakeFiles/codec.dir/rule
+.PHONY : CMakeFiles/cpp-ts2i.dir/rule
 
 # Convenience name for target.
-codec: CMakeFiles/codec.dir/rule
-.PHONY : codec
+cpp-ts2i: CMakeFiles/cpp-ts2i.dir/rule
+.PHONY : cpp-ts2i
 
 # clean rule for target.
-CMakeFiles/codec.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/codec.dir/build.make CMakeFiles/codec.dir/clean
-.PHONY : CMakeFiles/codec.dir/clean
+CMakeFiles/cpp-ts2i.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp-ts2i.dir/build.make CMakeFiles/cpp-ts2i.dir/clean
+.PHONY : CMakeFiles/cpp-ts2i.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

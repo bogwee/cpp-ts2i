@@ -117,24 +117,48 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named codec
+# Target rules for targets named cpp-ts2i
 
 # Build rule for target.
-codec: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 codec
-.PHONY : codec
+cpp-ts2i: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp-ts2i
+.PHONY : cpp-ts2i
 
 # fast build rule for target.
-codec/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/codec.dir/build.make CMakeFiles/codec.dir/build
-.PHONY : codec/fast
+cpp-ts2i/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp-ts2i.dir/build.make CMakeFiles/cpp-ts2i.dir/build
+.PHONY : cpp-ts2i/fast
+
+DCT.o: DCT.cpp.o
+.PHONY : DCT.o
+
+# target to build an object file
+DCT.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp-ts2i.dir/build.make CMakeFiles/cpp-ts2i.dir/DCT.cpp.o
+.PHONY : DCT.cpp.o
+
+DCT.i: DCT.cpp.i
+.PHONY : DCT.i
+
+# target to preprocess a source file
+DCT.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp-ts2i.dir/build.make CMakeFiles/cpp-ts2i.dir/DCT.cpp.i
+.PHONY : DCT.cpp.i
+
+DCT.s: DCT.cpp.s
+.PHONY : DCT.s
+
+# target to generate assembly for a file
+DCT.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp-ts2i.dir/build.make CMakeFiles/cpp-ts2i.dir/DCT.cpp.s
+.PHONY : DCT.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/codec.dir/build.make CMakeFiles/codec.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp-ts2i.dir/build.make CMakeFiles/cpp-ts2i.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -142,7 +166,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/codec.dir/build.make CMakeFiles/codec.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp-ts2i.dir/build.make CMakeFiles/cpp-ts2i.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -150,7 +174,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/codec.dir/build.make CMakeFiles/codec.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp-ts2i.dir/build.make CMakeFiles/cpp-ts2i.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -161,7 +185,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... codec"
+	@echo "... cpp-ts2i"
+	@echo "... DCT.o"
+	@echo "... DCT.i"
+	@echo "... DCT.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

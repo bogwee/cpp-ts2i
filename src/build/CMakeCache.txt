@@ -145,7 +145,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=codec_cpp
+CMAKE_PROJECT_NAME:STATIC=cpp-ts2i
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -216,13 +216,13 @@ Eigen3_DIR:PATH=/usr/share/eigen3/cmake
 OpenCV_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/opencv4
 
 //Value Computed by CMake
-codec_cpp_BINARY_DIR:STATIC=/home/lucah/work/polytech/mam4/cpp-ts2i/src/build
+cpp-ts2i_BINARY_DIR:STATIC=/home/lucah/work/polytech/mam4/cpp-ts2i/src/build
 
 //Value Computed by CMake
-codec_cpp_IS_TOP_LEVEL:STATIC=ON
+cpp-ts2i_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-codec_cpp_SOURCE_DIR:STATIC=/home/lucah/work/polytech/mam4/cpp-ts2i/src
+cpp-ts2i_SOURCE_DIR:STATIC=/home/lucah/work/polytech/mam4/cpp-ts2i/src
 
 
 ########################

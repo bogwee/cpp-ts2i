@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/include/eigen3 -isystem /usr/include/opencv4
+CXX_INCLUDES = -I/home/lucah/work/polytech/mam4/cpp-ts2i/src/. -isystem /usr/include/opencv4 -isystem /usr/include/eigen3
 
 CXX_FLAGS = 
 

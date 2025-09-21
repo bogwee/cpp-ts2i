@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/lucah/work/polytech/mam4/cpp-ts2i/src/main.cpp" "CMakeFiles/codec.dir/main.cpp.o" "gcc" "CMakeFiles/codec.dir/main.cpp.o.d"
+  "/home/lucah/work/polytech/mam4/cpp-ts2i/src/DCT.cpp" "CMakeFiles/cpp-ts2i.dir/DCT.cpp.o" "gcc" "CMakeFiles/cpp-ts2i.dir/DCT.cpp.o.d"
+  "/home/lucah/work/polytech/mam4/cpp-ts2i/src/main.cpp" "CMakeFiles/cpp-ts2i.dir/main.cpp.o" "gcc" "CMakeFiles/cpp-ts2i.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.
