@@ -1,4 +1,4 @@
-# Projet de Transcodage : Python → C++
+# Projet de Transcodage : Python en C++
 
 ## 1. Contexte du projet  
 L’objectif de ce projet est de **transcoder** un programme Python existant (codec d’images utilisant une DCT simplifiée) vers **C++** en respectant une structure plus modulaire avec des classes et en utilisant des bibliothèques adaptées pour le traitement d’images et l’algèbre linéaire.  
@@ -45,7 +45,7 @@ sudo apt install -y build-essential cmake libopencv-dev libeigen3-dev
 
 ## 4. Compilation  
 
-Depuis le dossier racine :  
+Depuis le dossier src :  
 ```bash
 mkdir build && cd build
 cmake ..
