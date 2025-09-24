@@ -50,7 +50,7 @@ int main(int argc, char** argv) {
     cv::merge(out8, out);
     cv::imwrite("decompressed.png", out);
 
-    double tauxCFinal = static_cast<double>(totalNonZeroCompressed) / (originalNonZero*3.0);
+    double tauxCFinal = static_cast<double>(totalNonZeroCompressed) / (originalNonZero*1.0);
     double compressionPercent = (1.0 - tauxCFinal) * 100.0;
 
     std::cout << "n = " << n << "\nCompression ≈ " << compressionPercent << "%\n";
